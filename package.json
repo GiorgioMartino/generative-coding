@@ -4,6 +4,8 @@
   "type": "module",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -44,6 +46,7 @@
     "eslint-config-mantine": "^4.0.3",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-react": "^7.37.1",
+    "gh-pages": "^6.2.0",
     "globals": "^15.11.0",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^25.0.1",
